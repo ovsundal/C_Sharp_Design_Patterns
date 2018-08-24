@@ -5,7 +5,7 @@ using System.IO;
 
 namespace C_Sharp_Design_Patterns
 {
-    public class Single_Responsibility
+    public class SingleResponsibility
     {
         static void Main(string[] args)
         {
@@ -43,7 +43,7 @@ namespace C_Sharp_Design_Patterns
         {
             return string.Join(Environment.NewLine, entries);
         }
-
+        //not recommended way to do it
         //public void Save(string filename)
         //{
         //    File.WriteAllText(filename, ToString());
@@ -51,7 +51,7 @@ namespace C_Sharp_Design_Patterns
 
         //public static Journal Load(string filename)
         //{
-           
+
         //}
     }
 
@@ -60,7 +60,7 @@ namespace C_Sharp_Design_Patterns
     {
         public void SaveToFile(Journal j, string filename, bool overwrite)
         {
-            if(overwrite || !File.Exists(filename))
+            if (overwrite || !File.Exists(filename))
                 File.WriteAllText(filename, j.ToString());
         }
     }
