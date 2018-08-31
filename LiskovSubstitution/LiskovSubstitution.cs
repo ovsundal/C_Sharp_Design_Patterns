@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace C_Sharp_Design_Patterns
 {
+    //Liskov substitution principle states that if S is a subtype of T, then objects of type T may
+    //be replaced with objects of type S without altering any of the desirable properties of the program (correctness,
+    //task performed, etc.)
     public class Rectangle
     {
         public virtual int Width { get; set; }
