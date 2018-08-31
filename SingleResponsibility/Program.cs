@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 
-namespace C_Sharp_Design_Patterns
+namespace SingleResponsibility
 {
     public class SingleResponsibility
     {
@@ -64,6 +64,4 @@ namespace C_Sharp_Design_Patterns
                 File.WriteAllText(filename, j.ToString());
         }
     }
-
-
 }
